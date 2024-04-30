@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  dotnettest:
+    init: true
+    build: .
+    volumes:
+      - .:/workspace
+    command:
+      - ls -l
